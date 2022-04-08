@@ -32,7 +32,7 @@ def main(key_path, src, trg, tsv_path):
     list_of_dfs = [current_tsv.loc[i:i+size-1,:] for i in range(0, len(current_tsv),size)]
     char_count = 0
     for idx, df in enumerate(list_of_dfs):
-        char_count += df['de'].apply(lambda x: len(x)).sum()
+        char_count += df[src].apply(lambda x: len(x)).sum()
         if char_count < 666666:
             pass
         else:
