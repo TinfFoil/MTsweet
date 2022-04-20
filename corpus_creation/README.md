@@ -10,7 +10,7 @@ This directory contains the scripts used to generate both the machine translated
 Given an API key and a TSV file containing the original corpora, run the software from the terminal using:
 
 ```bash
-py translate_Azure.py [-h] --filepath FILEPATH --key APIKEY --src SOURCE --trg TARGET
+pipenv run python translate_Azure.py [-h] --filepath FILEPATH --key APIKEY --src SOURCE --trg TARGET
 ```
 
 All other arguments are required and have the following behaviors:
@@ -45,7 +45,7 @@ The script generates a new TSV file, now containing the `MT` column and named `t
 Given an API key and a TSV file containing the original corpora, run the software from the terminal using:
 
 ```bash
-py translate_MMT.py [-h] --filepath FILEPATH --key APIKEY --src SOURCE --trg TARGET
+pipenv run python translate_MMT.py [-h] --filepath FILEPATH --key APIKEY --src SOURCE --trg TARGET
 ```
 
 All other arguments are required and have the following behaviors:
@@ -75,7 +75,7 @@ The script generates a new TSV file, now containing the `MT` column and named `t
 Given the TSV file obtained using the two previous scripts, run the software from the terminal using:
 
 ```bash
-py get_evaluation.py [-h] --filepath FILEPATH --ref REFERENCE --src SOURCE --trg TARGET
+pipenv run python get_evaluation.py [-h] --filepath FILEPATH --ref REFERENCE --src SOURCE --trg TARGET
 ```
 
 All arguments are required and have the following behaviors:
