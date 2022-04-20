@@ -55,7 +55,7 @@ def main():
         "CushLEPOR": load_dataset(
             "multitask_dataloader.py",
             data_files={
-                "train": "corpora/CushLEPOR//CushLEPOR_train.tsv"
+                "train": "corpora/CushLEPOR//CushLEPOR_train.tsv",
                 "validation": "corpora/CushLEPOR/CushLEPOR_test.tsv",
                 },
             ),
