@@ -7,7 +7,7 @@ On the basis of that corpus, the multilingual model XLM-RoBERTa (base) was fine-
 
 If you wish to know more about this research, please refer to the full dissertation:
 
-> Return to the Source: Assessing Machine Translation Suitability based on the Source Text using XLM-RoBERTa
+> [Return to the Source: Assessing Machine Translation Suitability based on the Source Text using XLM-RoBERTa](https://amslaurea.unibo.it/25307/)
 
 
 ## Development setup
