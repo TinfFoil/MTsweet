@@ -16,7 +16,7 @@ def main(src, ref, trg, tsv_path):
     
     
     print("\nLoading COMET...\n")
-    comet_path = download_model("wmt20-comet-da")
+    comet_path = download_model("wmt-large-qe-estimator-1719")
     comet = load_from_checkpoint(comet_path)
     print("\nLoading TransQuest...\n")
     transquest = MonoTransQuestModel("xlmroberta", "TransQuest/monotransquest-da-en_de-wiki", num_labels=1, use_cuda=torch.cuda.is_available())
