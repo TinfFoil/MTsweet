@@ -1,6 +1,6 @@
 # MTsweet
 
-This repository contains the scripts used in the experiments of my dissertation for the master's in Specialized Translation at the University of Bologna.
+This repository contains the scripts used in the experiments of [my dissertation](https://amslaurea.unibo.it/25307/) for the master's in Specialized Translation at the University of Bologna.
 
 It represents an attempt at approaching the problem of assessing machine translation quality starting from the source text alone. The work involved first building a corpus pairing source segments with the evaluation scores obtained by their respective machine translated version using state-of-the-art metrics for MT Evaluation ([cushLEPOR](https://github.com/poethan/cushLEPOR), [BERTScore](https://github.com/Tiiiger/bert_score)) and MT Quality Estimation ([COMET](https://github.com/Unbabel/COMET), [TransQuest](https://github.com/TharinduDR/TransQuest)).
 On the basis of that corpus, the multilingual model XLM-RoBERTa (base) was fine-tuned and evaluated to predict those same scores, once as a single-task model and once as a multi-task model.
