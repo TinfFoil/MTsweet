@@ -48,30 +48,30 @@ def main():
         "BERTScore": load_dataset(
             "multitask_dataloader.py",
             data_files={
-                "train": "corpora/BERTScore/BERTScore_train.tsv",
-                "validation": "corpora/BERTScore/BERTScore_test.tsv",
+                "train": "single_scores/BERTScore/BERTScore_train.tsv",
+                "validation": "single_scores/BERTScore/BERTScore_test.tsv",
                 },
             ),
         "CushLEPOR": load_dataset(
             "multitask_dataloader.py",
             data_files={
-                "train": "corpora/CushLEPOR//CushLEPOR_train.tsv",
-                "validation": "corpora/CushLEPOR/CushLEPOR_test.tsv",
+                "train": "single_scores/CushLEPOR//CushLEPOR_train.tsv",
+                "validation": "single_scores/CushLEPOR/CushLEPOR_test.tsv",
                 },
             ),
         
         "COMET": load_dataset(
             "multitask_dataloader.py",
             data_files={
-                "train": "corpora/COMET/COMET_train.tsv",
-                "validation": "corpora/COMET/COMET_test.tsv",
+                "train": "single_scores/COMET/COMET_train.tsv",
+                "validation": "single_scores/COMET/COMET_test.tsv",
                 },
             ),
         "TransQuest": load_dataset(
             "multitask_dataloader.py",
             data_files={
-                "train": "corpora/TransQuest/TransQuest_train.tsv",
-                "validation": "corpora/TransQuest/TransQuest_test.tsv",
+                "train": "single_scores/TransQuest/TransQuest_train.tsv",
+                "validation": "single_scores/TransQuest/TransQuest_test.tsv",
                  },
             ),
         }
