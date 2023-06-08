@@ -39,11 +39,7 @@ except (LookupError, OSError):
 
 def main():
     args = parse_args()
-
-    # Get the datasets: you can either provide your own CSV/JSON/TXT training and evaluation files (see below)
-    # or just provide the name of one of the public datasets available on the hub at https://huggingface.co/datasets/
-    # (the dataset will be downloaded automatically from the datasets Hub).
-
+    
     dataset_dict = {
         "BERTScore": load_dataset(
             "multitask_dataloader.py",
@@ -162,7 +158,7 @@ def main():
             learning_rate=args.learning_rate,
             do_train=True,
             num_train_epochs=args.num_train_epochs,
-            # Adjust batch size if this doesn't fit on the Colab GPU
+            # Adjust batch size if this doesn't fit on the GPU
             per_device_train_batch_size=args.per_device_train_batch_size,
             report_to=None,
             save_strategy="no",
